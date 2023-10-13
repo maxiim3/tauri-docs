@@ -1,0 +1,31 @@
+---
+// src/components/EmailLink.astro
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/SiteTitle.astro';
+---
+
+<Default {...Astro.props}><slot /></Default>
+<div class="sl-hidden lg:sl-flex flex">
+	<a href="/guides/prerequisites/">Guides</a>
+	<a href="/2/reference">References</a>
+	<a href="/blog">Blog</a>
+	<a href="/about">About</a>
+</div>
+
+<style>
+	.flex {
+		padding-inline-start: 2rem;
+		gap: 1rem;
+		align-items: center;
+
+		> a {
+			color: var(--sl-color-gray-2);
+			font-size: var(--sl-text-sm);
+			text-decoration: none;
+
+			:hover {
+				color: var(--sl-color-white);
+			}
+		}
+	}
+</style>

@@ -77,7 +77,7 @@ export default defineConfig({
 			components: {
 				MarkdownContent: 'starlight-blog/overrides/MarkdownContent.astro',
 				Sidebar: 'starlight-blog/overrides/Sidebar.astro',
-				ThemeSelect: 'starlight-blog/overrides/ThemeSelect.astro',
+				SiteTitle: 'src/components/overrides/SiteTitle.astro',
 			},
 			head: [
 				{
