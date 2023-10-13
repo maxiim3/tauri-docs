@@ -1,0 +1,23 @@
+---
+// This relies on a Starlight internal
+import Button from '@astrojs/starlight/components/CallToAction.astro';
+---
+
+<div class="not-content">
+	<Button variant="primary" link="/guides/prerequisites" icon={{ type: 'icon', name: 'rocket' }}>
+		Get Started
+	</Button>
+	<Button variant="minimal" link="/features" icon={{ type: 'icon', name: 'list-format' }}>
+		Features & Recipes
+	</Button>
+	<Button variant="minimal" link="/2/reference" icon={{ type: 'icon', name: 'open-book' }}>
+		API References
+	</Button>
+</div>
+
+<style>
+	div {
+		display: flex;
+		gap: 1.5rem;
+	}
+</style>
