@@ -10,48 +10,24 @@ This documentation is for the prereleased version of Tauri 2.0 and is subject to
 
 Tauri is a open source, cross-platform app toolkit used to create desktop and mobile apps. The core is built with the performance and security of [Rust](https://www.rust-lang.org) and the flexibility of HTML, CSS, and JavaScript. This means Tauri apps can be more secure, performant, and optimized by default while supporting [virtually any frontend framework](/guides/frontend/).
 
-Reach out to the [Tauri community on Discord](https://discord.com/invite/tauri) for any help and read the [contributing guide](/contribute) if you're interested in getting involved!
+Reach out to the Tauri community [on Discord](https://discord.com/invite/tauri) for any help and read the [contributing guide](/contribute) if you're interested in getting involved!
 
-import CallToAction from '@components/CallToAction.astro';
+import CallToAction from '@components/about/CallToAction.astro';
 
 <CallToAction />
 
 ---
 
-## Why Tauri?
+## Get Involved
 
-Tauri has 3 main advantages for developers to build on: a secure foundation for building apps, naturally smaller bundle size by using the system's native webview, and flexibility for developers to use any frontend and bindings for multiple languages.
+Tauri is open source and powered by and welcomes contributions of all kinds! Visit the [Contributing guide](/contribute) to learn how to get involved.
 
-### Secure Foundation
+## Governance
 
-By being built on Rust, Tauri is able to take advantage of the memory, thread, and type-safety offered by Rust. Apps built on Tauri can automatically get those benefits even without needing to be developed by Rust experts.
+One of the main goals of the organizational structure of Tauri is to guarantee we stay true to our open source values and do so sustainably while respecting the health and well-being of contributors. The [Tauri Programme within the Commons Conservancy](https://dracc.commonsconservancy.org/0035/) was established to commit to those values, and facilitate an open, transparent and efficient governance process throughout the future development of the Tauri and its auxiliary materials.
 
-Tauri also undergoes a security audit for major and minor releases. This not only covers code in the Tauri organization, but also for upstream dependencies that Tauri relies on. Of course this doesn't mitigate all risks, but it provides a solid foundation for developers to build on top of.
-
-Read the [Tauri security policy](https://github.com/tauri-apps/tauri/security/policy) and the [Tauri 1.0 audit report](https://github.com/tauri-apps/tauri/blob/dev/audits/Radically_Open_Security-v1-report.pdf).
-
-### Smaller App Size
-
-Tauri apps take advantage of the web view already available on every user's system. A Tauri app only contains the code and assets specific for that app and doesn't need to bundle a browser engine with every app. This means that a minimal Tauri app can be less than 600KB in size.
-
-Learn more about creating optimized apps in the [App Size concept](/concepts/size).
-
-### Flexible Architecture
-
-Since Tauri uses web technologies that means that virtually any frontend framework is compatible with Tauri. The [Frontend Configuration guide](/guides/frontend/) contains common configurations for popular frontend frameworks and the [Rendering concept](/concepts/rendering) discusses which rendering techniques work best with Tauri (such as SPAs and SSGs).
-
-Bindings between JavaScript and Rust are available to developers using the `invoke` function in JavaScript and Swift and Kotlin bindings are available for [Tauri Plugins](/guides/plugins/).
-
-[TAO](https://github.com/tauri-apps/tao) is responsible for Tauri window creation and [WRY](https://github.com/tauri-apps/wry) is responsible for web view rendering. These are libraries maintained by Tauri and can be consumed directly if deeper system integration is required outside of what Tauri exposes.
-
-In addition, Tauri maintains a number of plugins to extend what core Tauri exposes. You can find those plugins alongside those provided by the community in the [Features and Recipes section](/features).
-
-## Additional Resources
-
-There are many different ways to get involved with Tauri.
-
-The Tauri Working Group strives to stay true to the open source values that Tauri was created from while doing so sustainable to respect the heath and well-being of contributors.
-
-More information on the Tauri architecture and additional packages, crates, and libraries can be found in the [Architecture guide on GitHub](https://github.com/tauri-apps/tauri/blob/dev/ARCHITECTURE.md).
+Learn more about Tauri's governance and structure in the [Governance and Guidance repo on GitHub](https://github.com/tauri-apps/governance-and-guidance).
 
 ## Trademark
+
+While the Tauri software is available under a free and open source software license, that copyright license does not include a license to use the Tauri trademark. Read the [Trademark Guidelines](/trademark) to understand how to use the Tauri marks consistent with background law and community expectation.
